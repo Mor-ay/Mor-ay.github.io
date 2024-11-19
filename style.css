@@ -1,0 +1,57 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #0f0; /* Green text */
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with transparency */
+    padding: 20px;
+    border: 2px solid #0f0; /* Green border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green glow */
+    animation: glitch 1s infinite; /* Subtle glitch effect */
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    10% { transform: translate(-2px, 2px); }
+    20% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    filter: grayscale(100%);
+}
+
+.skills ul, .contact ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.skills li, .contact li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #0f0;
+}
